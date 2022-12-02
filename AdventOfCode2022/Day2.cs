@@ -16,6 +16,34 @@ public class Day2
         return result;
     }
 
+    public static int Part2(string[] inputs)
+    {
+        var result = 0;
+        foreach (var input in inputs)
+        {
+            var characters = input.Split(' ');
+            var points = 0;
+            if (characters[1].Equals("Y"))
+            {
+                points += GetNumberRepresentation(characters[0]);
+                points += 3;
+            }
+            else if (characters[1].Equals("X"))
+            {
+                points += ((GetNumberRepresentation(characters[0]) + 2) % 3) + 1;
+            }
+            else
+            {
+                points += ((GetNumberRepresentation(characters[0]) + 1) % 3) + 1;
+                points += 6;
+            }
+
+            result += points;
+        }
+
+        return result;
+    }
+
     private static int GetResult(string player, string opponent)
     {
         var playerNumber = GetNumberRepresentation(player);
