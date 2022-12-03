@@ -30,17 +30,23 @@ public class Day2
             }
             else if (characters[1].Equals("X"))
             {
-                points += ((GetNumberRepresentation(characters[0]) + 2) % 3) + 1;
+                var temp = GetNumberRepresentation(characters[0]) - 1;
+                temp += 2;
+                temp = temp % 3;
+                temp++;
+                points += temp;
             }
             else
             {
-                points += ((GetNumberRepresentation(characters[0]) + 1) % 3) + 1;
-                points += 6;
+                var temp = GetNumberRepresentation(characters[0]) - 1;
+                temp += 1;
+                temp = temp % 3;
+                temp++;
+                points += 6 + temp;
             }
 
             result += points;
         }
-
         return result;
     }
 
