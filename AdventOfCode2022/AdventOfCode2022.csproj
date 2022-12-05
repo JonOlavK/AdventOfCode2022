@@ -9,10 +9,18 @@
 
   <ItemGroup>
     <None Remove="Input\day2.txt" />
+    <None Remove="Input\day3.txt" />
+    <None Remove="Input\day3test.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Input\day2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\day3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\day3test.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

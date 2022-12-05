@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode2022;
 
-public class Day2
+public static class Day2
 {
     public static int Part1(string[] inputs)
     {
