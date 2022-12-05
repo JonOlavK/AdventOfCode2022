@@ -19,3 +19,10 @@ result = Day3.Part2(testInputs);
 Console.WriteLine($"Day 3 Part 2 Test Results: {result}");
 result = Day3.Part2(inputs);
 Console.WriteLine($"Day 3 Part 2 {result}");
+
+testInputs = File.ReadAllLines("./Input/day4test.txt");
+result = Day4.Part1(testInputs);
+Console.WriteLine($"Day 4 Part 1 Test Results: {result}");
+inputs = File.ReadAllLines("./Input/day4.txt");
+result = Day4.Part1(inputs);
+Console.WriteLine($"Day 4 Part 1 {result}");
