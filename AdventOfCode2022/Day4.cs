@@ -22,4 +22,28 @@ public static class Day4
 
         return result;
     }
+
+    public static int Part2(string[] inputs)
+    {
+        var result = 0;
+
+        foreach (var input in inputs)
+        {
+            var pairs = input.Split(',');
+            var first = pairs[0].Split('-');
+            var second = pairs[1].Split('-');
+            var minFirst = int.Parse(first[0]);
+            var maxFirst = int.Parse(first[1]);
+            var minSecond = int.Parse(second[0]);
+            var maxSecond = int.Parse(second[1]);
+            for (var i = minFirst; i <= maxFirst; i++)
+                if (i >= minSecond && i <= maxSecond)
+                {
+                    result++;
+                    break;
+                }
+        }
+
+        return result;
+    }
 }

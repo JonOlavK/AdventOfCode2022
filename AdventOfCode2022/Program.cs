@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using System.Diagnostics;
 using AdventOfCode2022;
 
 var inputs = File.ReadAllLines("./Input/day2.txt");
@@ -26,3 +25,5 @@ Console.WriteLine($"Day 4 Part 1 Test Results: {result}");
 inputs = File.ReadAllLines("./Input/day4.txt");
 result = Day4.Part1(inputs);
 Console.WriteLine($"Day 4 Part 1 {result}");
+result = Day4.Part2(inputs);
+Console.WriteLine($"Day 4 Part 2 {result}");
