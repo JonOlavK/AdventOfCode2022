@@ -38,3 +38,12 @@ result5 = Day5.Part2(testInputs);
 Console.WriteLine($"Day 5 Part 2 Test Results: {result5}");
 result5 = Day5.Part2(inputs);
 Console.WriteLine($"Day 5 Part 2 {result5}");
+
+testInputs = new []{ "zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw" };
+result = Day6.Part1(testInputs);
+Console.WriteLine($"Day 6 Part 1 Test Results: {result}");
+inputs = File.ReadAllLines("./Input/day6.txt");
+result = Day6.Part1(inputs);
+Console.WriteLine($"Day 6 Part 1 Test Results: {result}");
+result = Day6.Part2(inputs);
+Console.WriteLine($"Day 6 Part 2 Results: {result}");
