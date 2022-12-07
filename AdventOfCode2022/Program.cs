@@ -47,3 +47,7 @@ result = Day6.Part1(inputs);
 Console.WriteLine($"Day 6 Part 1 Test Results: {result}");
 result = Day6.Part2(inputs);
 Console.WriteLine($"Day 6 Part 2 Results: {result}");
+
+testInputs = File.ReadAllLines("./Input/day7test.txt");
+result = Day7.Part1(testInputs);
+Console.WriteLine($"Day 7 Part 1 Test Results: {result}");
