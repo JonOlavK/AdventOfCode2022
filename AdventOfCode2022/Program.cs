@@ -34,3 +34,7 @@ Console.WriteLine($"Day 5 Part 1 Test Results: {result5}");
 inputs = File.ReadAllLines("./Input/day5.txt");
 result5 = Day5.Part1(inputs);
 Console.WriteLine($"Day 5 Part 1 {result5}");
+result5 = Day5.Part2(testInputs);
+Console.WriteLine($"Day 5 Part 2 Test Results: {result5}");
+result5 = Day5.Part2(inputs);
+Console.WriteLine($"Day 5 Part 2 {result5}");
